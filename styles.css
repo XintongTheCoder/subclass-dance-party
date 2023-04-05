@@ -18,11 +18,23 @@ body, a:link, a:visited, a:active{
   float:right;
 }
 .topbar{
-  height:32px;
+  display: flex;
+  height:50px;
   background-color: #555;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .title{
-  background-color: #777;
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans SignWriting', sans-serif;
+  font-family: 'Rampart One', cursive;
 }
 .dancer{
   border:20px solid red;
@@ -41,12 +53,11 @@ body, a:link, a:visited, a:active{
 .bigger{
   transform: scale(2);
 }
+
 .superHeroDancer{
   transition-duration: 500ms;
   border-color: orange;
 }
-
-
 .changeShape {
   border-radius: 0;
   position: absolute;
@@ -57,6 +68,33 @@ body, a:link, a:visited, a:active{
   border-color: green;
 }
 
-.button {
+.dancerButtons, .lineUpButtons {
+  display: flex;
+  flex-direction: row;
+}
 
+.dancerButtons {
+  width: 40%;
+  justify-content: left;
+}
+
+.lineUpButtons {
+  width: 40%;
+  justify-content: right;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  color: #444;
+  border: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: 'Rampart One', cursive;
 }
